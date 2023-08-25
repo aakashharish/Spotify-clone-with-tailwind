@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../inout/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      .scbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.scbar::-webkit-scrollbar-thumb {
+  background: rgba(90, 90, 90);
+}
+
+.scbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+</style>
+
+    </style>
+  </head>
+  <body class="bg-black">
+    <section>
+      <div class="flex m-2">
+        <div class="sticky top-0">
+          <div><!-- Home and Search -->
+            <div class="bg-zinc-950 mb-2 w-80 rounded pl-3 pt-3 pb-3 pr-10">
+              <div>
+                <h3>
+                  <a class="text-white pb-4 flex font-bold" href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                      />
+                    </svg>
+  
+                    <span class="ml-4">Home</span></a
+                  >
+                </h3>
+              </div>
+              <div>
+                <h3>
+                  <a class="text-white flex font-semibold" href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 text-zinc-600"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                      />
+                    </svg>
+  
+                    <span class="ml-4 text-zinc-600 font-bold">Search</span></a
+                  >
+                </h3>
+              </div>
+            </div>
+  
+            <!-- Your Library -->
+            <div class="bg-zinc-950 w-80 p-3 rounded">
+              <div class="justify-between flex">
+                <div>
+                  <i class="fa-solid fa-music text-zinc-600"></i>
+                  <span class="ml-2 font-bold text-zinc-600">Your Library</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-plus text-zinc-600"></i>
+                </div>
+              </div>
+  
+              <div class="scbar h-44 flex flex-col overflow-y-auto">
+                <div class="bg-zinc-900 rounded-lg font- p-4 my-6">
+                  <p class="pb-3 font-semibold text-white">
+                    Create your first playlist
+                  </p>
+                  <p class="pb-4 text-white text-sm">It's easy, well help you</p>
+                  <button class="bg-white rounded-3xl py-1 px-3 font-semibold">
+                    Create playlist
+                  </button>
+                </div>
+    
+                <div class="bg-zinc-900 rounded-lg font- p-4">
+                  <p class="pb-3 font-semibold text-white">
+                    Let's find some podcasts to follow
+                  </p>
+                  <p class="pb-4 text-white text-sm">
+                    We'll keep you updated on new episodes
+                  </p>
+                  <button class="bg-white rounded-3xl py-1 px-3 font-semibold">
+                    Browse podcasts
+                  </button>
+                </div>
+              </div>
+              <div class="text-zinc-600 mt-8 text-xs font-semibold">
+                <div class="flex space-x-9 mb-4">
+                  <p>Legal</p>
+                  <p>Privacy Center</p>
+                  <p>Privacy Policy</p>
+                </div>
+                <div class="flex space-x-9 mb-4">
+                  <p>Cookies</p>
+                  <p>About Ads</p>
+                  <p>Accessibility</p>
+                </div>
+                <div class="mb-7">
+                  <p>Cookies</p>
+                </div>
+  
+                <div class="mb-24">
+                  <a
+                    class="text-white text-base border border-white py-1 px-3 rounded-full"
+                    href="#"
+                    ><i class="fa-solid fa-globe" style="color: #ffffff"></i
+                    ><span class="ml-2">English</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        <div class="w-full bg-zinc-950 ml-2 rounded-lg">
+          <div class="bg-zinc-950 rounded-lg">
+            <div class="flex justify-between py-6 content-center">
+              <!-- Left Right Button -->
+              <div class="flex space-x-3">
+                <button class="bg-black ml-3 rounded-full">
+                  <a class="rounded-full" href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 text-white p-1"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 19.5L8.25 12l7.5-7.5"
+                      />
+                    </svg>
+                  </a>
+                </button>
+                <button class="bg-black rounded-full">
+                  <a class="rounded-full" href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 text-white p-1"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </a>
+                </button>
+              </div>
+              <!-- Sign in and Login in Button -->
+              <div class="flex">
+                <a
+                  class="font-bold border-r-2 mr-5 pr-5 border-white text-zinc-600"
+                  href="#"
+                  >Premium Support Download</a
+                >
+                <a class="font-bold text-zinc-600 mr-5" href="#">Sign up</a>
+                <div>
+                  <a
+                    class="bg-white text-black font-bold mr-5 py-2 px-8 rounded-3xl"
+                    href="#"
+                  >
+                    Log in
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-zinc-900 rounded-b-md">
+              <div class="flex justify-between">
+                <h1 class="font-bold text-2xl ml-5 text-white">
+                  Spotify Playlists
+                </h1>
+                <p class="text-zinc-600 font-bold mr-6">Show all</p>
+              </div>
+              <!-- Playlist Grid -->
+              <div class="grid gap-5 m-5 grid-cols-5">
+                <div class="bg-zinc-950 rounded-md p-3">
+                  <img
+                    class="rounded"
+                    src="../assets/todaystophits.jpg"
+                    alt=""
+                  />
+                  <h2 class="font-bold py-3 text-white">Today's Top Hits</h2>
+                  <p class="text-zinc-600 text-xs">
+                    Peggy Gou is on top of the Hottest
+                  </p>
+                </div>
+                <div class="bg-zinc-950 rounded-md p-3">
+                  <img class="rounded" src="../assets/rapcaviar.jpg" alt="" />
+                  <h2 class="font-bold text-white py-3">RapCaviar</h2>
+                  <p class="text-zinc-600 text-xs">
+                    New Music from Quavo, Polo G and Lil Durk
+                  </p>
+                </div>
+                <div class="bg-zinc-950 rounded-md p-3">
+                  <img
+                    class="rounded"
+                    src="../assets/allouts2010s.jpg"
+                    alt=""
+                  />
+                  <h2 class="text-white font-bold py-3">All Out 2010s</h2>
+                  <p class="text-zinc-600 text-xs">
+                    The biggest songs of the 2010s
+                  </p>
+                </div>
+                <div class="bg-zinc-950 rounded-md p-3">
+                  <img
+                    class="rounded"
+                    src="../assets/rockclassics.jpg"
+                    alt=""
+                  />
+                  <h2 class="text-white font-bold py-3">Rock Classics</h2>
+                  <p class="text-zinc-600 text-xs">
+                    Rock legends & epic sonds that continue...
+                  </p>
+                </div>
+                <div class="bg-zinc-950 rounded-md p-3 pb-0">
+                  <img class="rounded" src="../assets/chillhits.jpg" alt="" />
+                  <h2 class="font-bold py-3 text-white">Chill Hits</h2>
+                  <p class="text-zinc-600 text-xs">
+                    Kick back to the best new and recent chill...
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between">
+                  <h1 class="font-bold text-2xl ml-5 text-white">Focus</h1>
+                  <p class="text-zinc-600 font-bold mr-6">Show all</p>
+                </div>
+
+                <!-- Grid 2 -->
+                <div class="grid gap-5 m-5 grid-cols-5">
+                  <div class="bg-zinc-950 rounded-md p-3">
+                    <img
+                      class="rounded"
+                      src="../assets/peacefulpiano.jpg"
+                      alt=""
+                    />
+                    <h2 class="font-bold py-3 text-white">Peaceful Piano</h2>
+                    <p class="text-zinc-600 text-xs">
+                      Peaceful piano to help you slow down...
+                    </p>
+                  </div>
+                  <div class="bg-zinc-950 rounded-md p-3">
+                    <img class="rounded" src="../assets/deepfocus.jpg" alt="" />
+                    <h2 class="font-bold py-3 text-white">Deep Focus</h2>
+                    <p class="text-zinc-600 text-xs">
+                      Keep clam and focus with ambient and...
+                    </p>
+                  </div>
+                  <div class="bg-zinc-950 rounded-md p-3">
+                    <img
+                      class="rounded"
+                      src="../assets/instrumentalstudys.jpg"
+                      alt=""
+                    />
+                    <h2 class="font-bold py-3 text-white">
+                      Instrumental Studys
+                    </h2>
+                    <p class="text-zinc-600 text-xs">
+                      Focus with soft study music in the...
+                    </p>
+                  </div>
+                  <div class="bg-zinc-950 rounded-md p-3">
+                    <img
+                      class="rounded"
+                      src="../assets/energypositivity.jpg"
+                      alt=""
+                    />
+                    <h2 class="font-bold text-white py-3">
+                      Energy + Positivity
+                    </h2>
+                    <p class="text-zinc-600 text-xs">
+                      Energy and positivity music for you...
+                    </p>
+                  </div>
+                  <div class="bg-zinc-950 rounded-md p-3 pb-0">
+                    <img class="rounded" src="../assets/focusflow.jpg" alt="" />
+                    <h2 class="font-bold py-3 text-white">Focus Flow</h2>
+                    <p class="text-zinc-600 text-xs">
+                      Uptempo instrumental hip hop beats.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Grid3 -->
+              <div>
+                <div class="flex justify-between">
+                  <h1 class="font-bold text-2xl text-white ml-5">
+                    Sound of India
+                  </h1>
+                  <p class="text-zinc-600 font-bold mr-6">Show all</p>
+                </div>
+                <div>
+                  <div class="grid gap-5 m-5 grid-cols-5">
+                    <div class="bg-zinc-950 rounded-md p-3">
+                      <img class="rounded" src="../assets/mumbai.jpg" alt="" />
+                      <h2 class="font-bold py-3 text-white">
+                        The sound of Mu...
+                      </h2>
+                      <p class="text-zinc-600 text-xs">
+                        The songs that define, unite and distinguish...
+                      </p>
+                    </div>
+                    <div class="bg-zinc-950 rounded-md p-3">
+                      <img class="rounded" src="../assets/kolkata.jpg" alt="" />
+                      <h2 class="font-bold py-3 text-white">
+                        The sound of Kol...
+                      </h2>
+                      <p class="text-zinc-600 text-xs">
+                        The songs that define, unite and distinguish...
+                      </p>
+                    </div>
+                    <div class="bg-zinc-950 rounded-md p-3">
+                      <img class="rounded" src="../assets/delhi.jpg" alt="" />
+                      <h2 class="font-bold text-white py-3">
+                        The sound of Del...
+                      </h2>
+                      <p class="text-zinc-600 text-xs">
+                        The songs that define, unite and distinguish...
+                      </p>
+                    </div>
+                    <div class="bg-zinc-950 rounded-md p-3">
+                      <img
+                        class="rounded"
+                        src="../assets/bengaluru.jpg"
+                        alt=""
+                      />
+                      <h2 class="text-white font-bold py-3">
+                        The sound of Ben...
+                      </h2>
+                      <p class="text-zinc-600 text-xs">
+                        The songs that define, unite and distinguish...
+                      </p>
+                    </div>
+                    <div class="bg-zinc-950 rounded-md p-3 pb-0">
+                      <img class="rounded" src="../assets/chennai.jpg" alt="" />
+                      <h2 class="font-bold py-3 text-white">
+                        The sound of Che...
+                      </h2>
+                      <p class="text-zinc-600 text-xs">
+                        The songs that define, unite and distinguish...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Bottom -->
+              <div class="flex mt-16 mb-8 justify-between">
+                <div class="flex">
+                  <div class="ml-5 mr-24">
+                    <p><a class="font-bold text-white" href="#">Company</a></p>
+                    <p class="py-2">
+                      <a class="text-zinc-600 font-semibold" href="#">About</a>
+                    </p>
+                    <p class="py-2">
+                      <a class="text-zinc-600 font-semibold" href="#">Jobs</a>
+                    </p>
+                    <p class="py-2">
+                      <a class="text-zinc-600 font-semibold" href="#"
+                        >For the Record</a
+                      >
+                    </p>
+                  </div>
+                  <div>
+                    <h1>
+                      <a class="font-bold mr-20 text-white" href="#"
+                        >Communities</a
+                      >
+                    </h1>
+                    <p class="py-2">
+                      <a class="text-zinc-600 font-semibold" href="#"
+                        >For Artists</a
+                      >
+                    </p>
+                    <p class="py-2">
+                      <a class="text-zinc-600 font-semibold" href="#"
+                        >Developers</a
+                      >
+                    </p>
+                    <p class="py-2">
+                      <a class="text-zinc-600 font-semibold" href="#"
+                        >Advertising</a
+                      >
+                    </p>
+                    <p class="py-2">
+                      <a class="text-zinc-600 font-semibold" href="#"
+                        >Investors</a
+                      >
+                    </p>
+                    <p class="py-2">
+                      <a class="text-zinc-600 font-semibold" href="#"
+                        >Vendors</a
+                      >
+                    </p>
+                  </div>
+                  <div class="ml-5">
+                    <p>
+                      <a class="font-bold text-white" href="#">Useful links</a>
+                    </p>
+                    <p class="py-2">
+                      <a class="text-zinc-600 font-semibold" href="#"
+                        >Support</a
+                      >
+                    </p>
+                    <p class="py-2">
+                      <a class="text-zinc-600 font-semibold" href="#"
+                        >Free Mobile App</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="flex mr-5">
+                  <div class="m-2">
+                    <a class="bg-zinc-950 rounded-full p-2" href="#"
+                      ><i
+                        class="fa-brands fa-instagram"
+                        style="color: #ffffff"
+                      ></i
+                    ></a>
+                  </div>
+                  <div class="m-2">
+                    <a class="bg-zinc-950 rounded-full p-2" href="#"
+                      ><i
+                        class="fa-brands fa-twitter"
+                        style="color: #ffffff"
+                      ></i
+                    ></a>
+                  </div>
+                  <div class="m-2">
+                    <a class="bg-zinc-950 rounded-full p-2" href="#"
+                      ><i
+                        class="fa-brands fa-facebook"
+                        style="color: #ffffff"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="mx-5">
+                <div class="w-full border-t-2 border-zinc-500">
+                  <div class="pt-10 pb-12">
+                    <i
+                      class="fa-regular fa-copyright"
+                      style="color: #ffffff"
+                    ></i
+                    ><span class="p-1 text-zinc-600 font-semibold"
+                      >2023 Spotyfy AB</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-gradient-to-l from-blue-500 to-blue-900 flex content-center justify-between sticky bottom-0"
+      >
+        <div class="ml-3 my-3 text-white">
+          <p class="text-sm">PREVIEW OF SPOTIFY</p>
+          <p class="font-bold text-sm">
+            Sign up to get unlimited songs and podcasts with occaional ads. No
+            credit card need
+          </p>
+        </div>
+        <div class="mt-5">
+          <a
+            class="bg-white px-5 pt-2 pb-3 text-center mr-3 font-bold rounded-full"
+            href="#"
+            >Sign up free</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
